@@ -5,18 +5,28 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+Simple UI, 
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
 ---
+- The hint is doing the opposite. It tells you to go higher for a lower number and viseversa while it was supposed to do the opposite
+- Inconsistant number of attempts. It says out of attempts even if there is 1 attempt left. when the game is run there are 7 attempts for normal difficulty , but when new game is run it says 8 attempts 
+- Level difficulty is inconsistant. Range on hard is 1-50 and easy is 1-20. Hard was supposed to have the bigger range 1-50 and easy should be 1-20
+- the range always take 1 -100 because it is hard coded insteade of depending on the difficulty level
+- inputs are not filtered , incorrect inputs like letters or numbers out of range count as input and the attempt is counted instead of prompting the user to input the correct input
+- even number guess are incorrectly compared with the target number because they are converted to string 
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)? 
+ claude
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+The AI suggested that even number attempts are not compared with the target correctly,  we vertified that by refering to app.py file line 158 - 161
 
----
+- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+It didn't suggest anything that was incorrect
+--- 
 
 ## 3. Debugging and testing your fixes
 
