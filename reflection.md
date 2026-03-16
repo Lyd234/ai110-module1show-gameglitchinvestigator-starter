@@ -31,10 +31,12 @@ It didn't suggest anything that was incorrect
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+I asked AI to give me test cases for the 2 bugs I fixed. all tests passed. Then I run the code and vertifed again.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  The test I run to check if the hint was fixed by comparing with the target and vertifying that both the message and the out come  is correct.
 - Did AI help you design or understand any tests? How?
-
+yes. It help me design a test that checks both the outcome and message. It also helped me understand why the previous test that was there was not reliable as it only checks the outcome and not the message
 ---
 
 ## 4. What did you learn about Streamlit and state?
