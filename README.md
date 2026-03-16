@@ -26,9 +26,16 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The purpose of the game is to guess a number with in somerange based on the difficulty, given a fixed number of bugs 
 - [ ] Detail which bugs you found.
+inconsistant attempt count
+-broken hint
+- level of difficulty and the range gicen has a mismatch
+- attempts are counted even if the input type is wrong eg. letter, numbers out of range
 - [ ] Explain what fixes you applied.
-
+- i gave the correct range for the difficulty level
+- I applied the correct message for the hints
+- I fixed the comparison type which was string for even attempts
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
